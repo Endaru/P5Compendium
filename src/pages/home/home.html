@@ -1,14 +1,16 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content no-bounce>
+  <div id="header">
+    <h1>Persona  Compendium</h1>
+    <div class="line"></div>
+  </div>
+  <div id="content">
+    <div id="contentText">
+      <ng-container *ngFor="let persona of personaList">
+        <container-cmp [persona]="persona"></container-cmp>
+      </ng-container>
+    </div>
+  </div>
+  <div id="footer" [hidden]="true">
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  </div>
 </ion-content>

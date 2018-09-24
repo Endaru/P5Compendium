@@ -1,0 +1,31 @@
+<ng-container *ngIf="persona" >
+  <div id="{{persona.id}}" class="PersonaNameContainer" ngClass="{{selected}}" (click)="show()">
+    <div class="organizer">
+      <div class="ArcanaBox"><a class="ArcanaLetters ContainerLetters">{{persona.arcana}}</a></div>
+      <div class="textBox">
+        <p>{{persona.lvl}}</p>
+        <p>•</p>
+        <li>{{persona.name}}</li>
+      </div>
+    </div>
+    <div class="info" *ngIf="hidden">
+      <div class="wrapper">
+        <div class="img"><img src="../../assets/imgs/Phys.png"><h2>{{persona.weaknesses[0]}}</h2></div>
+        <div class="img"><img src="../../assets/imgs/Gun.png"><h2>{{persona.weaknesses[1]}}</h2></div>
+      </div>
+      <div class="wrapper">
+        <div class="img"><img src="../../assets/imgs/Agi.png"><h2>{{persona.weaknesses[2]}}</h2></div>
+        <div class="img"><img src="../../assets/imgs/Bufu.png"><h2>{{persona.weaknesses[3]}}</h2></div>
+        <div class="img"><img src="../../assets/imgs/Zio.png"><h2>{{persona.weaknesses[4]}}</h2></div>
+        <div class="img"><img src="../../assets/imgs/Garu.png"><h2>{{persona.weaknesses[5]}}</h2></div>
+        <div class="img"><img src="../../assets/imgs/Psy.png"><h2>{{persona.weaknesses[6]}}</h2></div>
+        <div class="img"><img src="../../assets/imgs/Frei.png"><h2>{{persona.weaknesses[7]}}</h2></div>
+        <div class="img"><img src="../../assets/imgs/Hama.png"><h2>{{persona.weaknesses[8]}}</h2></div>
+        <div class="img"><img src="../../assets/imgs/Mudo.png"><h2>{{persona.weaknesses[9]}}</h2></div>
+      </div>
+      <div class="infoBox">
+        <a>{{persona.description}}</a>
+      </div>
+    </div>
+  </div>
+</ng-container>

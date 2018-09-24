@@ -1,0 +1,102 @@
+.ArcanaBox{
+  background-color: white;
+  float: left;
+  border-radius: 5px;
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 120px;
+  margin: 0.5% 4% 0.5% 0;
+  text-align: center;
+}
+.textBox{
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+
+.wrapper {
+    width: 100%;
+    clear: left;
+
+  .img {
+    position: relative;
+    margin-bottom: 10px;
+    float: left;
+    margin-right: 1%;
+
+    h2{
+      position: absolute;
+      color: white;
+      font-size: 150%;
+      font-family: fantasy;
+      top: -8px;
+      left: 35%;
+      text-shadow: 3px 0 0 black, -3px 0 0 black, 0 3px 0 black, 0 -3px 0 black, 2px 2px black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black;
+    }
+  }
+}
+
+container-cmp {
+  a{
+    font-size: 150%;
+    color: Black;
+    font-family: fantasy;
+  }
+
+  p{
+    color: white;
+    font-size: 150%;
+    font-family: fantasy;
+    padding-bottom: 1%;
+    display: inline;
+    padding-right: 5px;
+  }
+
+  li{
+    color: white;
+    font-size: 150%;
+    font-family: fantasy;
+    padding-bottom: 1%;
+    display: inline;
+  }
+
+  .PersonaNameContainer{
+    margin-top: 0.75%;
+    margin-bottom: 0.75%;
+    padding-left: 1%;
+    width: 101%;
+    transform: rotate(-0.75deg);
+  }
+
+  .PersonaNameContainer:Hover{
+    background-color: Red;
+    transform: rotate(0.75deg);
+    box-shadow: -16px 0px 0 #f90505;
+  }
+
+  .active{
+    background-color: Red;
+    transform: rotate(0.75deg);
+    box-shadow: -16px 0px 0 #f90505;
+  }
+
+  .info{
+    padding-bottom: 15px;
+    padding-top: 1%;
+    margin-top: 1%;
+
+    .infoBox {
+      width: 90%;
+      clear: left;
+      padding: 4px;
+      box-shadow: 10px 5px white;
+      background-color: black;
+
+      a {
+        color: white;
+        font-size: 150%;
+        font-family: fantasy;
+        clear: left;
+      }
+    }
+  }
+}
